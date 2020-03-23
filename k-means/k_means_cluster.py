@@ -60,6 +60,13 @@ print("The maximum stock value is : ",max(stock))
 print("The minimum salary is : ",min(salary))
 print("The maximum salary is : ",max(salary))
 
+def MinMaxScaler(value,minval,maxval):
+    scaled_value = (value-minval)/(maxval-minval)
+    print(scaled_value)
+
+MinMaxScaler(200000.0,float(min(salary)),float(max(salary)))
+MinMaxScaler(1000000.0,float(min(stock)),float(max(stock)))
+
 ### the input features we want to use 
 ### can be any key in the person-level dictionary (salary, director_fees, etc.) 
 feature_1 = "salary"
